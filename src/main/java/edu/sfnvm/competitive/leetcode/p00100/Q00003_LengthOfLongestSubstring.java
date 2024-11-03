@@ -1,4 +1,4 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 import java.util.HashSet;
 
@@ -7,7 +7,7 @@ import java.util.HashSet;
  * [M] Longest Substring Without Repeating Characters
  * </a>
  */
-public class Q0003_LengthOfLongestSubstring {
+public class Q00003_LengthOfLongestSubstring {
 
     public static void main(String[] args) {
         Solution s = new Solution();

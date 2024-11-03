@@ -1,11 +1,11 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 import java.util.Arrays;
 
 /**
  * <a href="https://leetcode.com/problems/two-sum/">[E] Problem: Two Sum</a>
  */
-public class Q0001_TwoSum {
+public class Q00001_TwoSum {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 7, 11, 15};

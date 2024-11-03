@@ -1,19 +1,19 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 import edu.sfnvm.competitive.leetcode.common.Solution;
 
 /**
  * <a href="https://leetcode.com/">LeetCode Problem Origin</a>
  */
-public class Q0000_Template {
+public class Q00000_Template {
 
     public static void main(String[] args) {
-        test("abbaasd");
+        test();
     }
 
-    public static void test(String input) {
-        Solution s = new Solution();
-        var result = s.resolveMethod();
+    public static void test() {
+        Solution sol = new Solution();
+        var result = sol.resolveMethod();
         System.out.println(result);
     }
 }

@@ -1,11 +1,11 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/string-to-integer-atoi">
  * String to Integer (atoi)
  * </a>
  */
-public class Q0008_StringToIntegerAtoi {
+public class Q00008_StringToIntegerAtoi {
 
     public static void main(String[] args) {
         test("abbaasd");

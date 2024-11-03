@@ -1,9 +1,9 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/add-two-numbers/">[M] Problem: Add Two Numbers</a>
  */
-public class Q0002_AddTwoNumbers {
+public class Q00002_AddTwoNumbers {
     public static void main(String[] args) {
         test01();
         test02();

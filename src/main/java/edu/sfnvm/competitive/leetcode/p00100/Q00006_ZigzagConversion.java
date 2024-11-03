@@ -1,11 +1,11 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 import java.util.Arrays;
 
 /**
  * <a href="https://leetcode.com/problems/zigzag-conversion">Zigzag Conversion</a>
  */
-public class Q0006_ZigzagConversion {
+public class Q00006_ZigzagConversion {
 
     public static void main(String[] args) {
         test("AB", 1);

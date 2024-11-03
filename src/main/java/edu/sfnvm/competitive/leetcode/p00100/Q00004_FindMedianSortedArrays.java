@@ -1,9 +1,9 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/median-of-two-sorted-arrays">[H] Median of Two Sorted Arrays</a>
  */
-public class Q0004_FindMedianSortedArrays {
+public class Q00004_FindMedianSortedArrays {
 
     public static void main(String[] args) {
         test01();

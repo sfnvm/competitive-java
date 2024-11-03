@@ -1,9 +1,9 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/palindrome-number">Palindrome Number</a>
  */
-public class Q0009_PalindromeNumber {
+public class Q00009_PalindromeNumber {
 
     public static void main(String[] args) {
         test(123);

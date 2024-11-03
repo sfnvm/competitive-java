@@ -1,11 +1,11 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/reverse-integer">
  * Reverse Integer
  * </a>
  */
-public class Q0007_ReverseInteger {
+public class Q00007_ReverseInteger {
 
     public static void main(String[] args) {
         test(Integer.MAX_VALUE);

@@ -1,9 +1,9 @@
-package edu.sfnvm.competitive.leetcode;
+package edu.sfnvm.competitive.leetcode.p00100;
 
 /**
  * <a href="https://leetcode.com/problems/longest-palindromic-substring">Longest Palindromic Substring</a>
  */
-public class Q0005_LongestPalindrome {
+public class Q00005_LongestPalindrome {
 
     public static void main(String[] args) {
         test("abbaasd");
