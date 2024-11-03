@@ -8,7 +8,7 @@ package edu.sfnvm.competitive.leetcode;
 public class Q0007_ReverseInteger {
 
     public static void main(String[] args) {
-        test(1);
+        test(Integer.MAX_VALUE);
     }
 
     public static void test(int input) {
