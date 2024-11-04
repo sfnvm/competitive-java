@@ -15,12 +15,14 @@ public class Q00009_PalindromeNumber {
     }
 
     public static void test(int input) {
-        Solution s = new Solution();
+        PalindromeNumber s = new PalindromeNumber();
         var result = s.isPalindrome(input);
         System.out.println(result);
     }
 
-    public static class Solution {
+    @SuppressWarnings("unused")
+    public static class PalindromeNumber {
+
         public boolean naiveIsPalindrome(int x) {
             if (x < 0) {
                 return false;

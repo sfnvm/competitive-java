@@ -10,7 +10,7 @@ public class Q00002_AddTwoNumbers {
     }
 
     public static void test01() {
-        Solution s = new Solution();
+        AddTwoNumbers s = new AddTwoNumbers();
         // Init samples
         ListNode l1 = new ListNode(9);
         l1 = new ListNode(4, l1);
@@ -26,7 +26,7 @@ public class Q00002_AddTwoNumbers {
     }
 
     public static void test02() {
-        Solution s = new Solution();
+        AddTwoNumbers s = new AddTwoNumbers();
         // Init samples
         ListNode l1 = new ListNode(9);
         l1 = new ListNode(9, l1);
@@ -58,7 +58,7 @@ public class Q00002_AddTwoNumbers {
     ///// SOLUTION /////
     ////////////////////
 
-    public static class Solution {
+    public static class AddTwoNumbers {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             ListNode rs = null;
             int carry = 0;

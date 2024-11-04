@@ -10,7 +10,7 @@ import java.util.HashSet;
 public class Q00003_LengthOfLongestSubstring {
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        LengthOfLongestSubstring s = new LengthOfLongestSubstring();
 
         // Test 01
         System.out.println(s.lengthOfLongestSubstring("abcabcbb"));
@@ -25,7 +25,7 @@ public class Q00003_LengthOfLongestSubstring {
     /**
      * Sliding Windows Problem
      */
-    public static class Solution {
+    public static class LengthOfLongestSubstring {
         public int lengthOfLongestSubstring(String s) {
             if (s == null || s.isEmpty()) {
                 return 0;

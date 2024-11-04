@@ -13,7 +13,7 @@ public class Q00010_RegularExpressionMatching {
     }
 
     public static void test(String s, String p) {
-        Solution sol = new Solution();
+        RegularExpressionMatching sol = new RegularExpressionMatching();
         var result = sol.isMatch(s, p);
         System.out.println(result);
     }
@@ -22,7 +22,8 @@ public class Q00010_RegularExpressionMatching {
      * Dynamic Programming: Decision Tree
      * Top-Down Memoization
      */
-    public static class Solution {
+    public static class RegularExpressionMatching {
+
         public boolean isMatch(String s, String p) {
             Map<String, Boolean> cache = new HashMap<>();
             return dfs(0, 0, s, p, cache);

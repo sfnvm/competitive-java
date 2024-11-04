@@ -15,12 +15,14 @@ public class Q00006_ZigzagConversion {
     }
 
     public static void test(String input, int numRows) {
-        Solution s = new Solution();
+        ZigzagConversion s = new ZigzagConversion();
         var result = s.diyConvert2(input, numRows);
         System.out.println(result);
     }
 
-    public static class Solution {
+    @SuppressWarnings("unused")
+    public static class ZigzagConversion {
+
         public String diyConvert(String s, int numRows) {
             String[] matrix = new String[numRows];
             Arrays.fill(matrix, "");

@@ -12,12 +12,13 @@ public class Q00007_ReverseInteger {
     }
 
     public static void test(int input) {
-        Solution s = new Solution();
+        ReverseInteger s = new ReverseInteger();
         var result = s.reverse(input);
         System.out.println(result);
     }
 
-    public static class Solution {
+    public static class ReverseInteger {
+
         public int reverse(int x) {
             boolean neg = false;
             if (x < 0) {

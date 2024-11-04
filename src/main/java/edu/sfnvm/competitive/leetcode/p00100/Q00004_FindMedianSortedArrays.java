@@ -6,44 +6,20 @@ package edu.sfnvm.competitive.leetcode.p00100;
 public class Q00004_FindMedianSortedArrays {
 
     public static void main(String[] args) {
-        test01();
-        test02();
-        test03();
-        test04();
-        test05();
+        test(new int[]{1, 3, 5}, new int[]{2, 4}, 3);
+        test(new int[]{2, 2, 4, 4}, new int[]{2, 2, 2, 4, 4}, 2);
+        test(new int[]{1, 2}, new int[]{3, 4}, 2.5);
+        test(new int[]{1, 3}, new int[]{2}, 2);
+        test(new int[]{1}, new int[]{}, 1);
     }
 
-    public static void test01() {
-        Solution s = new Solution();
-        var result = s.findMedianSortedArrays2(new int[]{1, 3, 5}, new int[]{2, 4});
-        System.out.println("result = " + result + ", expedted = " + 3);
+    public static void test(int[] nums1, int[] nums2, double expected) {
+        FindMedianSortedArrays s = new FindMedianSortedArrays();
+        var result = s.findMedianSortedArrays2(nums1, nums2);
+        System.out.println("result = " + result + ", expedted = " + expected);
     }
 
-    public static void test02() {
-        Solution s = new Solution();
-        var result = s.findMedianSortedArrays2(new int[]{2, 2, 4, 4}, new int[]{2, 2, 2, 4, 4});
-        System.out.println("result = " + result + ", expedted = " + 2);
-    }
-
-    public static void test03() {
-        Solution s = new Solution();
-        var result = s.findMedianSortedArrays2(new int[]{1, 2}, new int[]{3, 4});
-        System.out.println("result = " + result + ", expedted = " + 2.5);
-    }
-
-    public static void test04() {
-        Solution s = new Solution();
-        var result = s.findMedianSortedArrays2(new int[]{1, 3}, new int[]{2});
-        System.out.println("result = " + result + ", expedted = " + 2);
-    }
-
-    public static void test05() {
-        Solution s = new Solution();
-        var result = s.findMedianSortedArrays2(new int[]{1}, new int[]{});
-        System.out.println("result = " + result + ", expedted = " + 1);
-    }
-
-    public static class Solution {
+    public static class FindMedianSortedArrays {
         /**
          * BAD: Merge Sorted Arrays
          */

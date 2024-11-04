@@ -10,7 +10,7 @@ public class Q00005_LongestPalindrome {
     }
 
     public static void test(String input) {
-        Solution s = new Solution();
+        LongestPalindrome s = new LongestPalindrome();
         var result = s.longestPalindrome(input);
         System.out.println(result);
     }
@@ -18,7 +18,7 @@ public class Q00005_LongestPalindrome {
     /**
      * Dynamic Programming: Using Expansion from center
      */
-    public static class Solution {
+    public static class LongestPalindrome {
         public String longestPalindrome(String s) {
             int start = 0, maxLen = 1;
             char[] chars = s.toCharArray();

@@ -24,12 +24,13 @@ public class Q00008_StringToIntegerAtoi {
     }
 
     public static void test(String input) {
-        Solution s = new Solution();
+        StringToIntegerAtoi s = new StringToIntegerAtoi();
         var result = s.myAtoi(input);
         System.out.println(result);
     }
 
-    public static class Solution {
+    public static class StringToIntegerAtoi {
+
         public int myAtoi(String s) {
             int rs = 0;
             int idx = 0;
