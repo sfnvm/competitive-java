@@ -9,84 +9,84 @@ package edu.sfnvm.competitive.datastructure;
 // a Singly Linked List 
 public class LinkedList {
 
-    Node head; // head of list
+  Node head; // head of list
 
-    // Linked list Node.
-    // This inner class is made static
-    // so that main() can access it
-    static class Node {
+  // Method to insert a new node
+  public static LinkedList insert(LinkedList list, int data) {
+    // Create a new node with given data
+    Node new_node = new Node(data);
 
-        int data;
-        Node next;
+    // If the Linked List is empty,
+    // then make the new node as head
+    if (list.head == null) {
+      list.head = new_node;
+    } else {
+      // Else traverse till the last node
+      // and insert the new_node there
+      Node last = list.head;
+      while (last.next != null) {
+        last = last.next;
+      }
 
-        // Constructor
-        Node(int d) {
-            data = d;
-            next = null;
-        }
+      // Insert the new_node at last node
+      last.next = new_node;
     }
 
-    // Method to insert a new node
-    public static LinkedList insert(LinkedList list, int data) {
-        // Create a new node with given data
-        Node new_node = new Node(data);
+    // Return the list by head
+    return list;
+  }
 
-        // If the Linked List is empty,
-        // then make the new node as head
-        if (list.head == null) {
-            list.head = new_node;
-        } else {
-            // Else traverse till the last node
-            // and insert the new_node there
-            Node last = list.head;
-            while (last.next != null) {
-                last = last.next;
-            }
+  // Method to print the LinkedList.
+  public static void printList(LinkedList list) {
+    Node currNode = list.head;
 
-            // Insert the new_node at last node
-            last.next = new_node;
-        }
+    System.out.print("LinkedList: ");
 
-        // Return the list by head
-        return list;
+    // Traverse through the LinkedList
+    while (currNode != null) {
+      // Print the data at current node
+      System.out.print(currNode.data + " ");
+
+      // Go to next node
+      currNode = currNode.next;
     }
+  }
 
-    // Method to print the LinkedList.
-    public static void printList(LinkedList list) {
-        Node currNode = list.head;
+  // Driver code
+  public static void main(String[] args) {
+    /* Start with the empty list. */
+    LinkedList list = new LinkedList();
 
-        System.out.print("LinkedList: ");
+    //
+    // ******INSERTION******
+    //
 
-        // Traverse through the LinkedList
-        while (currNode != null) {
-            // Print the data at current node
-            System.out.print(currNode.data + " ");
+    // Insert the values
+    list = insert(list, 1);
+    list = insert(list, 2);
+    list = insert(list, 3);
+    list = insert(list, 4);
+    list = insert(list, 5);
+    list = insert(list, 6);
+    list = insert(list, 7);
+    list = insert(list, 8);
 
-            // Go to next node
-            currNode = currNode.next;
-        }
+    // Print the LinkedList
+    printList(list);
+  }
+
+  // Linked list Node.
+  // This inner class is made static
+  // so that main() can access it
+  static class Node {
+
+    int data;
+    Node next;
+
+    // Constructor
+    Node(int d) {
+      data = d;
+      next = null;
     }
-
-    // Driver code
-    public static void main(String[] args) {
-        /* Start with the empty list. */
-        LinkedList list = new LinkedList();
-
-        //
-        // ******INSERTION******
-        //
-
-        // Insert the values
-        list = insert(list, 1);
-        list = insert(list, 2);
-        list = insert(list, 3);
-        list = insert(list, 4);
-        list = insert(list, 5);
-        list = insert(list, 6);
-        list = insert(list, 7);
-        list = insert(list, 8);
-
-        // Print the LinkedList
-        printList(list);
-    }
+  }
 }

@@ -7,41 +7,41 @@ package edu.sfnvm.competitive.leetcode.p00100;
  */
 public class Q00007_ReverseInteger {
 
-    public static void main(String[] args) {
-        test(Integer.MAX_VALUE);
-    }
+  public static void main(String[] args) {
+    test(Integer.MAX_VALUE);
+  }
 
-    public static void test(int input) {
-        ReverseInteger s = new ReverseInteger();
-        var result = s.reverse(input);
-        System.out.println(result);
-    }
+  public static void test(int input) {
+    ReverseInteger s = new ReverseInteger();
+    var result = s.reverse(input);
+    System.out.println(result);
+  }
 
-    public static class ReverseInteger {
+  public static class ReverseInteger {
 
-        public int reverse(int x) {
-            boolean neg = false;
-            if (x < 0) {
-                neg = true;
-                x = -x;
-            }
+    public int reverse(int x) {
+      boolean neg = false;
+      if (x < 0) {
+        neg = true;
+        x = -x;
+      }
 
-            int prevRevNum = 0;
-            int revNum = 0;
-            while (x != 0) {
-                int curDigit = x % 10;
-                revNum = (revNum * 10) + curDigit;
+      int prevRevNum = 0;
+      int revNum = 0;
+      while (x != 0) {
+        int curDigit = x % 10;
+        revNum = (revNum * 10) + curDigit;
 
-                // Check overflow
-                if ((revNum - curDigit) / 10 != prevRevNum) {
-                    return 0;
-                }
-
-                prevRevNum = revNum;
-                x = x / 10;
-            }
-
-            return neg ? -revNum : revNum;
+        // Check overflow
+        if ((revNum - curDigit) / 10 != prevRevNum) {
+          return 0;
         }
+
+        prevRevNum = revNum;
+        x = x / 10;
+      }
+
+      return neg ? -revNum : revNum;
     }
+  }
 }
